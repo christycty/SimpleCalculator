@@ -1,0 +1,31 @@
+Version 1 : 1/9/2018 9:30PM
+	String result = stores current formula
+	
+	TextArea(Display current formula or calculate result)
+	
+	Buttons : 
+		Numbers: 0 - 9
+			result += "Numbers"
+			
+		Operators: + - x /
+			result += " Operators "
+			
+		= (Indicate operation starts)
+			check(result)
+			If check then Operation:
+				calculate * / first then + -
+				(String)int result replaces "number operator number"
+			display result 
+	
+	Modifications:
+		Store result with String[] (Process operators more easily)
+		Simplify check function (build string[] to store full operator list)
+		If result is int then omit the floating points
+		
+	
+	Planning:
+		Reset: Reset OutputScreen
+		Delete: Delete a digit
+		".": Allow decimal numbers
+		"^": Power function
+		"√": SquareRoot function
